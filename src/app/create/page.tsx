@@ -7,7 +7,6 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Eraser, Undo } from "lucide-react";
 import { useHotkeys } from "@mantine/hooks";
-import { cn } from "@/lib/utils";
 import Dot from "@/components/shared/dot";
 
 export default function Page() {
@@ -81,6 +80,7 @@ export default function Page() {
         {/* dots */}
         {dots.map((dot, index) => (
           <Dot
+            key={index}
             dot={dot}
             autoFocus
             type="create"

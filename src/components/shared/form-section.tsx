@@ -5,7 +5,7 @@ export default function FormSection({
   children,
 }: {
   label: string;
-  children: any;
+  children: React.ReactNode;
 }) {
   return (
     <div className="w-full">
